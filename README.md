@@ -19,17 +19,18 @@ This is how you would evaluate a boolean expression in idiomatic C#:
 
 And this is how is done with a Smalltalk-like API:
     
-     ```csharp
+```cs
     booleanExpression.And(anotherBooleanExp)
                      .IfTrue(() => //Code to handle true...)
-                     .IfFalse(() => //Code to handle false...)
-    ```
+                     .IfFalse(() => //Code to handle false...);
+```
 
 # Example
 
-   ```csharp
+```cs
    var number = 15;
+   
    (number % 3 == 0).And(number % 5 == 0)
                              .IfTrue(() => Console.WriteLine("Number is divisible by 15"))
                              .IfFalse(() => Console.WriteLine("Number is not divisible by 15"));
-    ```
+```
