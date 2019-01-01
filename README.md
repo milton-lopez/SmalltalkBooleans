@@ -1,11 +1,11 @@
 # SmalltalkBooleans
 A Smalltalk-like implementation of booleans in C#. Just for fun, not for actual use.
 
-#Use
+# Use
 
 This is how you would evaluate a boolean expression in idiomatic C#:
 
- ```csharp
+```cs
     if (booleanExp && anotherBooleanExp)
     {
       // Code to handle true...
@@ -14,9 +14,10 @@ This is how you would evaluate a boolean expression in idiomatic C#:
     {
       //Code to handle false...
     }
-    ```
-    
-    And this is how is done with a Smalltalk-like API:
+```
+
+
+And this is how is done with a Smalltalk-like API:
     
      ```csharp
     booleanExpression.And(anotherBooleanExp)
@@ -24,7 +25,7 @@ This is how you would evaluate a boolean expression in idiomatic C#:
                      .IfFalse(() => //Code to handle false...)
     ```
 
-#Example
+# Example
 
    ```csharp
    var number = 15;
